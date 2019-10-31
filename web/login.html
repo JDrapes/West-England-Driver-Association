@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
-        <title>West England Drivers Association</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>West England Drivers Association</title>
+
+        <!-- Font Icon -->
+        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     </head>
     <body>
+
+        <!-- nav bar -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">West England Driver Association</a>
+            <a class="navbar-brand" href="index.html">West England Driver Association</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,40 +29,61 @@ and open the template in the editor.
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                        <a class="nav-link" href="#">Panel (admin panel/user panel</a>
+                    </li>                
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login / Register <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!-- END OF NAVBAR -->
+        <!-- END OF NAVBAR -->      
 
 
-        <!-- START OF LOGIN FORM -->
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-        <!-- END OF LOGIN FORM -->
+        <!-- end nav bar -->
 
 
+        <div class="main">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+            <!-- Sing in  Form -->
+            <section class="sign-in">
+                <div class="container">
+                    <div class="signin-content">
+                        <div class="signin-image">
+                            <figure><img src="img/signin-image.jpg" alt="login image"></figure>
+                            <a href="register.html" class="signup-image-link">Create an account</a>
+                        </div>
+
+                        <div class="signin-form">
+                            <h2 class="form-title">Login</h2>
+                            <form method="POST" class="register-form" id="login-form">
+                                <div class="form-group">
+                                    <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                    <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                    <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                                </div>
+                                <div class="form-group form-button">
+                                    <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                                </div>
+                            </form>              
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- JS -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     </body>
+
 </html>

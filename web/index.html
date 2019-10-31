@@ -9,12 +9,24 @@ and open the template in the editor.
         <title>West England Drivers Association</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles -->
+        <link href="css/freelancer.min.css" rel="stylesheet">
+        <link href="css/freelancer.css" rel="stylesheet">
+        <!-- Custom fonts  -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
     </head>
     <body>
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">West England Driver Association</a>
+            <a class="navbar-brand" href="index.html">West England Driver Association</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,14 +36,12 @@ and open the template in the editor.
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
+                        <a class="nav-link" href="#">Panel (admin panel/user panel)</a>
+                    </li>                  
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="login.html">Login / Register</a> 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login / Register</a>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -76,29 +86,117 @@ and open the template in the editor.
 
         <!-- START OF JUMOBTRON -->
         <div class="jumbotron">
-            <h1 class="display-4">Welcome to West England Driver Association!</h1>
-            <p class="lead">We are a company that does stuff with your money...</p>
+            <h1 class="display-4">Welcome to West England Drivers Association!</h1>
+            <p class="lead">We are a solidarity fund who offer you that piece of mind</p>
             <hr class="my-4">
-            <p>Optional additional text can go here</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <p>Solidarity is the “moral infrastructure” of social insurance arrangements that protect citizens against financial risks of illness: costs of medical care (health insurance) and loss of income (disability insurance). Although these arrangements have both met reforms, the effects of these reforms on the two forms of insurance have not yet been compared. This article presents a comparative analysis of these reforms’ impact on solidarity since the 1980s in the Netherlands. It develops an analytical framework, distinguishing coverage and financing dimensions, and concludes that the reforms affected several solidarity dimensions and that the effects were partly different in health insurance and disability insurance.</p>
+            <form method="get" action="ServletOne">
+            <input name="button" type="submit" class="btn btn-primary btn-lg" value="Click for ServletOne"/>
+            </form>
+            
+            
         </div>
         <!--END OF JUMBOTRON -->
-        
-        
+                
         <!-- START OF INFO ABOUT US -->
-    
-        
-        
-        
-        <!-- END OF INFO ABOUT US --> 
+            <div class="container">
 
+                <h2 class="text-center text-uppercase text-secondary mb-0">Our team</h2>
+                <hr class="star-dark mb-5">
 
-        <form method="get" action="ServletOne">
-            <input name="button" type="submit" value="Click for ServletOne"/>
-        </form>
+                <!-- Team Members Row -->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 text-center mb-4">
+                        <img class="rounded-circle img-fluid d-block mx-auto" src="img/employeePics/jordan.jpg" width="200px" alt="">
+                        <h3>Jordan Draper</h3>
+                        <h3><small>CEO</small></h3>
+                        <p>Our company vision is to be seen as the best, if we can reach the right audience, people will find out we already are</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center mb-4">
+                        <img class="rounded-circle img-fluid d-block mx-auto" src="img/employeePics/andreas.jpg" width="200px" alt="">
+                        <h3>Andreas Dane</h3>
+                        <h3><small>Operations manager</small></h3>
+                        <p>Whether you're looking to invest of become a client, we will be with you every step of you journey</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center mb-4">
+                        <img class="rounded-circle img-fluid d-block mx-auto" src="img/employeePics/alex.jpg" width="200px" alt="">
+                        <h3>Alex Press</h3>
+                        <h3><small>Systems Director</small></h3>
+                        <p>We are paving the way in intelligent systems, contact me for any questions about our platform</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center mb-4">
+                        <img class="rounded-circle img-fluid d-block mx-auto" src="img/employeePics/jack.jpg" width="200px" alt="">
+                        <h3>Jack Grainger</h3>
+                        <h3><small>Lead developer</small></h3>
+                        <p>West England Drivers Association will be the today of tomorrow</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center mb-4">
+                        <img class="rounded-circle img-fluid d-block mx-auto" src="img/employeePics/max.jpg" width="200px" alt="">
+                        <h3>Max Cole</h3>
+                        <h3><small>Database architect</small></h3>
+                        <p>The passion we all share for our work here at West England Drivers Association will be the success factor within the business</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF INFO ABOUT US --> 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-    </body>
+            <!-- START footer -->
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">Bristol
+                            <br>United Kingdom</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Our social platform</h4>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="">
+                                    <i class="fab fa-fw fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="">
+                                    <i class="fab fa-fw fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="">
+                                    <i class="fab fa-fw fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="">
+                                    <i class="fab fa-fw fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="text-uppercase mb-4">About West England Drivers Association</h4>
+                        <p class="lead mb-0">We strive to provide the best service, if you have any feedback, good or bad, please reach out to our
+                            <a href="#">  support team</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- copyright -->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Copyright &copy; West England Driver Association 2019</small>
+            </div>
+        </div>
+
+        <!-- END footer -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        </body>
 </html>
