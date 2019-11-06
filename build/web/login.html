@@ -15,6 +15,8 @@
 
     </head>
     <body>
+
+        <!-- nav bar -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">West England Driver Association</a>
@@ -37,6 +39,10 @@
         </nav>
         <!-- END OF NAVBAR -->      
 
+
+        <!-- end nav bar -->
+
+
         <div class="main">
 
             <!-- Sing in  Form -->
@@ -50,23 +56,27 @@
 
                         <div class="signin-form">
                             <h2 class="form-title">Login</h2>
-                            <form method="POST" class="register-form" id="login-form">
+                            
+                            <form action="Controller" method="POST" class="register-form" id="login-form">
                                 <div class="form-group">
-                                    <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                                    <label for="your_email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <input type="text" name="txtemail" id="your_email" placeholder="Email"/>
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                    <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                                    <input type="password" name="txtpassword" id="your_pass" placeholder="Password"/>
                                 </div>
+                                
                                 <div class="form-group">
                                     <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                     <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                                </div>
+                                </div>      
+                    
                                 <div class="form-group form-button">
                                     <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                                </div>
-                            </form>              
+                                </div>                                
+                            </form>  
                         </div>
                     </div>
                 </div>
