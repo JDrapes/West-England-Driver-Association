@@ -34,6 +34,9 @@ public class ServletOne extends HttpServlet {
         RequestDispatcher view = request.getRequestDispatcher("newjsp.jsp");
         view.forward(request, response);
         
+        
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
