@@ -50,9 +50,11 @@ public class LoginController extends HttpServlet {
                             response.sendRedirect("newjsp.jsp"); // Directs user to the access granted page
                         }  
                         else{
-                            response.sendRedirect("login.html"); // Redirects user to the login page
+                           
                         }
-                    }    
+                        
+                    }
+                    response.sendRedirect("login.html"); // Redirects user to the login page
                 }
             }
             catch(Exception e){
