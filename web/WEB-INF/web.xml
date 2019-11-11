@@ -10,7 +10,7 @@
     </servlet>
     <servlet>
         <servlet-name>RegistrationController</servlet-name>
-        <servlet-class>com.RegistrationController</servlet-class>
+        <servlet-class>com.servlet.RegistrationController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletOne</servlet-name>
