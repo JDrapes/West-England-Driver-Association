@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.servlet;
+package com;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,9 +52,9 @@ public class LoginController extends HttpServlet {
                         if (rs.getString("id").equals(loginID)) { //Checking ID from CREDENTIALS table against the ID on the PERMISSIONS table 
                             int profileType = rs.getInt("usertype");
                             if (profileType == 0) { //0 is what i used during testing for admin
-                                response.sendRedirect("adminPanel.html"); // Directs user to the access granted page
+                                response.sendRedirect("adminPanel.jsp"); // Directs user to the access granted page
                             } else { //Profile type is 1 - used for customers during testing
-                                response.sendRedirect("customerPanel.html"); // Directs user to the access granted page
+                                response.sendRedirect("customerPanel.jsp"); // Directs user to the access granted page
                             }
                         }
                     }
@@ -65,7 +65,7 @@ public class LoginController extends HttpServlet {
             pw.println("<script type=\"text/javascript\">");
             pw.println("alert('Invalid Email or Password');");
             pw.println("</script>");
-            RequestDispatcher rd = request.getRequestDispatcher("login.html"); //Replaced redirect with request dispatcher.
+            RequestDispatcher rd = request.getRequestDispatcher("login.jsp"); //Replaced redirect with request dispatcher.
             rd.include(request, response);
 
         } catch (Exception e) {

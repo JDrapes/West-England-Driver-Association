@@ -1,5 +1,5 @@
 
-package com.servlet;
+package com;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -5,20 +5,20 @@
         <servlet-class>com.ServletOne</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Controller</servlet-name>
-        <servlet-class>com.servlet.LoginController</servlet-class>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.LoginController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RegistrationController</servlet-name>
-        <servlet-class>com.servlet.RegistrationController</servlet-class>
+        <servlet-class>com.RegistrationController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletOne</servlet-name>
         <url-pattern>/ServletOne</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Controller</servlet-name>
-        <url-pattern>/Controller</url-pattern>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegistrationController</servlet-name>

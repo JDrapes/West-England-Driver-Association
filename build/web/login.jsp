@@ -1,3 +1,10 @@
+<%-- 
+    Document   : login
+    Created on : 11-Nov-2019, 15:32:57
+    Author     : jordandraper
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,20 +26,20 @@
         <!-- nav bar -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">West England Driver Association</a>
+            <a class="navbar-brand" href="index.jsp">West England Driver Association</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.jsp">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Panel (admin panel/user panel</a>
                     </li>                
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login / Register <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="login.jsp">Login / Register <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -51,13 +58,13 @@
                     <div class="signin-content">
                         <div class="signin-image">
                             <figure><img src="img/signin-image.jpg" alt="login image"></figure>
-                            <a href="register.html" class="signup-image-link">Create an account</a>
+                            <a href="register.jsp" class="signup-image-link">Create an account</a>
                         </div>
 
                         <div class="signin-form">
                             <h2 class="form-title">Login</h2>
                             
-                            <form action="Controller" method="POST" class="register-form" id="login-form">
+                            <form action="LoginController" method="POST" class="register-form" id="login-form">
                                 <div class="form-group">
                                     <label for="your_email"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                     <input type="text" name="txtemail" id="your_email" placeholder="Email"/>

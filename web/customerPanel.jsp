@@ -1,9 +1,11 @@
+<%-- 
+    Document   : customerPanel
+    Created on : 11-Nov-2019, 15:35:18
+    Author     : jordandraper
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>West England Drivers Association</title>
@@ -19,20 +21,20 @@ and open the template in the editor.
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">West England Driver Association</a>
+            <a class="navbar-brand" href="index.jsp">West England Driver Association</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.jsp">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Panel (admin panel/user panel <span class="sr-only">(current)</span></a>
                     </li>                
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login / Register</a>
+                        <a class="nav-link" href="login.jsp">Login / Register</a>
                     </li>
                 </ul>
             </div>
@@ -73,3 +75,4 @@ and open the template in the editor.
 
     </body>
 </html>
+

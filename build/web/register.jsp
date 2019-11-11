@@ -1,3 +1,10 @@
+<%-- 
+    Document   : register
+    Created on : 11-Nov-2019, 15:34:12
+    Author     : jordandraper
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,20 +24,20 @@
     <body>
         <!-- NAVBAR -->
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">West England Driver Association</a>
+            <a class="navbar-brand" href="index.jsp">West England Driver Association</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.jsp">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Panel (admin panel/user panel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login / Register <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="login.jsp">Login / Register <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +77,7 @@
                         </div>
                         <div class="signup-image">
                             <figure><img src="img/signup-image.jpg" alt="sign up image"></figure>
-                            <a href="login.html" class="signup-image-link">I am already member</a>
+                            <a href="login.jsp" class="signup-image-link">I am already member</a>
                         </div>
                     </div>
                 </div>
