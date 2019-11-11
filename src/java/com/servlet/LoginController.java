@@ -45,7 +45,7 @@ public class LoginController extends HttpServlet {
                 while (rs.next()){ // Selecting next Result Set
                     if (rs.getString("email").equals(user_email) && rs.getString("password").equals(user_password)){ // if username and password equal the info listed in the database
 
-                        response.sendRedirect("newjsp.jsp"); // Directs user to the access granted page
+                        response.sendRedirect("customerPanel.html"); // Directs user to the access granted page
                     }  
                 }   
                 response.sendRedirect("login.html"); // Redirects user to the login page
