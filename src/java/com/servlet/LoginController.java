@@ -22,15 +22,15 @@ import javax.servlet.http.HttpServletResponse;
  * @author alexp
  */
 public class LoginController extends HttpServlet {
-    
+
     Connection conn = null;
     ResultSet rs = null;
     Statement st;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
+
         response.setContentType("text/html;charset=UTF-8");
-        try(PrintWriter out = response.getWriter()){
+        try (PrintWriter out = response.getWriter()) {
 
             // Reading the user email and password and adding the info into a string
             String user_email = request.getParameter("txtemail");
@@ -42,23 +42,21 @@ public class LoginController extends HttpServlet {
             st = (Statement) conn.createStatement();
             rs = st.executeQuery("select * from USERNAME.CREDENTIALS");
 
-            try{    
-                if (user_email != null){ // checking if there is an email input
-                    while (rs.next()){ // Selecting next Result Set
-                        if (rs.getString(2).equals(user_email) && rs.getString(3).equals(user_password)){ // if username and password equal the info listed in the database
+            try {
+                if (user_email != null) { // checking if there is an email input
+                    while (rs.next()) { // Selecting next Result Set
+                        if (rs.getString(2).equals(user_email) && rs.getString(3).equals(user_password)) { // if username and password equal the info listed in the database
 
-                            response.sendRedirect("newjsp.jsp"); // Directs user to the access granted page
-                        }  
-                        else{
-                            response.sendRedirect("login.html"); // Redirects user to the login page
-                        }
-                    }    
+                            response.sendRedirect("customerPanel.html"); // Directs user to the access granted page
+                        } 
+
+                    }
+                    response.sendRedirect("login.html"); // Redirects user to the login page
+
                 }
+            } catch (Exception e) {
             }
-            catch(Exception e){
-            }
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             out.println("Error: ");
         }
     }
@@ -67,6 +65,5 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
-
 
 }
