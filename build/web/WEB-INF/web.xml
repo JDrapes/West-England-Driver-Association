@@ -6,7 +6,7 @@
     </servlet>
     <servlet>
         <servlet-name>LoginController</servlet-name>
-        <servlet-class>com.LoginController</servlet-class>
+        <servlet-class>com.servlet.LoginController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RegistrationController</servlet-name>
